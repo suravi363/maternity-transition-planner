@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #D8BFF6; /* Soft lavender background */
+  color: black; /* Medium purple text */
+  padding-top: 60px; /* Prevent content from being hidden behind fixed navbar */
+}
+
+header {
+  /*background-color: #C0A0E1;*/
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Navbar */
+#navbar {
+  list-style-type: none;
+  padding: 0;
+  background-color: #B39DDB; /* Lighter lavender navbar */
+  margin: 0;
+  overflow: hidden;
+  position: fixed; /* Keeps navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensures the navbar spans across the full width of the page */
+  z-index: 1000; /* Makes sure it's on top of other elements */
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align navbar items horizontally */
+  justify-content: center; /* Center the navbar items */
+}
+
+#navbar ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#navbar ul li a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#navbar ul li a:hover {
+  background-color: #9C6CFF; /* Lighter shade of purple for hover */
+}
+
+/* Active Link Style */
+#navbar ul li a.active {
+  background-color: #9C6CFF; /* Active link styling */
+  font-weight: bold;
+}
+
+h2 {
+  color: #5a4f70; /* Medium purple for headings */
+  margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+  background: #ffffff; /* White background for contrast */
+  padding: 20px;
+  border: 1px solid #B39DDB; /* Light purple borders */
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #5a4f70;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #B39DDB; /* Light purple borders for inputs */
+  border-radius: 5px;
+}
+
+form button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #C0A0E1; /* Slightly darker lavender button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #9C6CFF; /* Lighter shade of purple for button hover */
+}
+
+/* Task/Leave Message Display */
+.task-message {
+  background-color: #e9e3f7; /* Very light lavender */
+  border: 1px solid #d4ccf0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  color: #4d4360;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #B39DDB; /* Matching footer background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Underline class */
+.underline {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+/* Main background */
+body {
+  background-color: #D8BFF6; /* Soft lavender */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+/* Header */
+header {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Content Summary Section */
+.content-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.content-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+}
+
+.content-card h2 {
+  color: #4d4360;
+  margin-bottom: 15px;
+}
+
+.content-card p {
+  color: #4d4360;
+  margin-bottom: 20px;
+}
+
+.content-card .btn {
+  background-color: #C0A0E1;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.content-card .btn:hover {
+  background-color: #9C6CFF;
+}
+
+/* Footer */
+footer {
+  background-color: #B39DDB;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Layout of Home Page */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-image {
+  flex: 1;
+  max-width: 300px;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.welcome-text {
+  flex: 2;
+  text-align: right;
+}
+
+.welcome-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.welcome-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Optional: Add some margin between the image and text */
+.home-container > div {
+  margin: 10px;
+}
